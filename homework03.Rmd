@@ -1,0 +1,34 @@
+---
+title: "Homework 3"
+author: "Taran Panduranga"
+date: "2/10/2022"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r}
+
+#b. 
+#Taran Panduranga,https://github.com/taranpanduranga/practice1-taranpanduranga
+#Tanishq Jain, https://github.com/Tanishq-6/practice1-Tanishq-6
+  
+# There were two successful pull requests from both me and my
+# partner. I requested changes to Tanishq-6/practice1-Tanishq-6,
+# and accepeted two pull requests from Tanishq-6/practice1-Tanishq-6.
+
+# c. The first tip is when starting, practice forking, pulling, and pushing with a partner so that you   #can see there screen as changes are being made. Secondly, it would be prudent to take a moment to #understand how your work is connected in the overall structure of git. The third tip is to keep #practicing to the point that there is a firm understanding of forking, pushing, and pulling from a #repository.
+
+#2.
+gapminder <- read.csv("C:/Users/mailt/Documents/College 3/Spring 2022/DS 202/gapminder-5060.csv")
+library(dplyr)
+library(ggplot2)
+df <- gapminder %>% filter(country %in% c("Canada"))
+ggplot(data = df, aes(x = lifeExp, y = gdpPercap)) + geom_point() 
+dfaus <- gapminder %>% filter(country %in% c("Australia"))
+ggplot(data = dfaus, aes(x = lifeExp, y = gdpPercap)) + geom_point()
+
+
+```
+
+
